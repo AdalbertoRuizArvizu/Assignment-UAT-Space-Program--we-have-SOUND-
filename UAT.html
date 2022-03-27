@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<!--
+        tagsV1.html - used to test the tagging functions in html
+        Adalberto Ruiz
+        email: adaruiz@uat.edu
+-->
+
+
+
+<head>
+    <script src= "code.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>
+        Adalberto's UAT Space Page
+    </title>
+
+</head>
+
+<body>
+    <table>
+        <td>
+            <img src="SpaceLogo.jpg">
+        </td>
+        <td>    <h1>
+            UAT Space Program
+        </h1></td>
+    </table>
+    <br>
+    <table id="data" border="2" width="70%">
+        <col style="width: 35%;">
+        <col style="width: 35%;">
+        <thead>
+            <th>Data Type</th>
+            <th>Reading</th>
+        </thead>
+        <tbody>
+            <tr id="seconds"><td>Time Elapsed:</td><td>15 seconds</td></tr>
+            <tr id="latitude"><td>Latitude:<td>0</td></tr>
+            <tr id="longitude"><td>Longitude:<td>0</td></tr>
+            <tr id="gpsSensor_alt"><td>GPS altitude:<td>0</td></tr>
+            <tr id="bmpSensor_alt"><td>BMP altitude:<td>30383.04</td></tr>
+            <tr id="bmpSensor_pres"><td>BMP pressure<td>2.43</td></tr>
+            <tr id="bmpSensor_temp"><td>BMP temperature:<td>0</td></tr>
+            <tr id="digSensor_tempo"><td>Digital Temperature:<td>24.12</td></tr>
+            <tr id="cssSensor_temp"><td>CSS temperature:<td>25</td></tr>
+            <tr id="cssSensor_CO2"><td>CSS eCO2:<td>400</td></tr>
+            <tr id="cssSensor_TVOC"><td>CSS TVOC:<td>0</td></tr>
+            <tr id="UV"><td>UV<td>0</td></tr>
+            <tr id="accelX"><td>Accel X:<td>-0.87</td></tr>
+            <tr id="accelY"><td>Accel Y:<td>-0.02</td></tr>
+            <tr id="accelZ"><td>Accel Z:<td>9.61</td></tr>
+            <tr id="magneticX"><td>Magnetic X:<td>0.13</td></tr>
+            <tr id="magneticY"><td>Magnetic Y:<td>-0.02</td></tr>
+            <tr id="magneticZ"><td>Magnetic Z:<td>-0.24</td></tr>
+            <tr id="gyroX"><td>Gyro X:<td>4.66</td></tr>
+            <tr id="gyroY"><td>Gyro Y:<td>0.01</td></tr>
+            <tr id="gyroZ"><td>Gyro Z:<td>-0.64</td></tr>
+        </tbody>
+    </table>
+    <br>
+    
+
+    <br>
+    <br>
+    <br>
+    <button class="lgButton" onclick="playStation();">Play Space Station Sounds</button>
+    <br>
+    <br>   
+
+
+    <script>
+        /*Multiline comment, this is the alert function,
+        it will display the text within quotes as text in an alert box popup*/
+
+        //alert("Test of the alert function. Please press ok");
+    </script>
+    <br>
+    <br>
+    <button id="startButton" onclick="start();" class="button">Start</button>   
+    <button id="stopButton" onclick="stop();" class="button">Stop</button>
+    <br>
+    <br>
+    Let's Play Craps
+    <div id="crapsRes">Craps results</div>
+    <div id="die1Res">Craps results</div>
+    <div id="die2Res">Craps results</div>
+    <br>
+    <button onclick="startCraps();">Play Craps</button>
+    <br>
+    wins:   <div id="winRes">0</div>
+    losses: <div id="lossRes">0</div>
+    ties:  <div id="die2Res">0</div>
+    <br>
+    <br>
+
+</body>
+
+</html>
